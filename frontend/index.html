@@ -278,10 +278,13 @@
                 const formData = new FormData();
                 formData.append("audio", audioBlob, "recording.webm");
 
-                const response = await fetch("http://localhost:8000/transcribe", {
+                const response = await fetch(
+                    "https://voice-to-text-api-vgls.onrender.com/transcribe", 
+                    {
                     method: "POST",
                     body: formData
-                });
+                    }
+            );
 
                 if (!response.ok) {
                     throw new Error(`HTTP error: ${response.status}`);

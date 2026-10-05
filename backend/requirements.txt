@@ -1,4 +1,5 @@
-fastapi
-uvicorn
-faster-whisper
-python-multipart
+fastapi==0.142.2
+uvicorn==0.54.0
+faster-whisper==1.2.1
+av==13.1.0
+python-multipart==0.0.32
